@@ -1,0 +1,9 @@
+create table products( price int, name varchar(100) primary key, peroid int ) 
+insert into Products values(2000,'cycle',178); 
+insert into Products values(8000,'realme7',256); 
+insert into Products values(6000,'realme8',198); 
+select * from Products where name LIKE '%realme%'
+select * from Products where (price >= 1500 AND price <= 2000) OR (peroid >= 180 AND peroid <= 200) 
+select * from Products where (price >= 1500 AND price <= 2000) AND (peroid >= 160 AND peroid <= 200) 
+DELETE FROM Products WHERE name = 'cycle' 
+UPDATE Products SET price = 8500, peroid = 250 WHERE name = 'cycle';
